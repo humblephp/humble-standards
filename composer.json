@@ -1,0 +1,9 @@
+{
+    "name": "humble/standards",
+    "description": "HUMBLE Standards",
+    "license": "MIT",
+    "require": {
+        "squizlabs/php_codesniffer": "~2.5",
+        "phpmd/phpmd": "~2.3"
+    }
+}

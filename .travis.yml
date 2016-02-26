@@ -1,0 +1,13 @@
+language: php
+
+php:
+  - 7.0
+  - nightly
+
+before_script:
+  - composer self-update
+  - composer install --prefer-source
+
+script:
+  - ./vendor/bin/phpcs ./ruleset --extensions=php --standard=./ruleset/phpcs.xml
+  - ./vendor/bin/phpmd ./ruleset text ./ruleset/phpmd.xml
